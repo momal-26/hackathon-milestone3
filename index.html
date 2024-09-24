@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> milestone3/Dynamic resume </title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Dynamic Resume Builder with Form</h1>
+        <hr  width="100%" size="2" color="brown" noshade>
+         <form  id ="resumeForm" action="/submit"method="POST"> 
+            <div class="info">
+         <h2>personal information</h2>       
+            <label for="name">Name:</label>  
+            <input type="text" id="name" name="name">  
+            <label for="email">Email:</label>  
+            <input type="email" id="email" name="email"> 
+            <label for ="contact">Contact Me:</label>
+            <input type="tel" id="phone" name="contact">
+          </div>
+<hr width="100%" color="brown" noshade="brown">
+ <div class="education">
+   <h2>Educational Experience</h2>
+   <label for="graduation">Graduation from:</label>
+   <input type="text" id="graduation" name="graduation">
+   <label for="intermediate">Intermediate from:</label>
+   <input type="text" id="intermediate" name="intermediate">
+   <label for="matriculation">Matriculation from:</label>
+   <input type="text" id="matriculation" name="matriculation">
+   </div>
+   <hr width="100%" color="brown" noshade="brown">
+      <div class="experience">
+   <h2>Professional Experience</h2>
+   <label for="experience1">Experience1:</label>
+<input type="text" id="experience1" name="experience1">
+<label for="experience2">Experience2:</label>
+<input type="text" id="experience2" name="experience2">
+<label for="experience3">Experience3:</label>
+<input type="text" id="experience3" name="experience3">
+</div>
+<hr width="100%" color="brown" noshade="brown">
+<div class="skills">
+<h2>Skills</h2>
+<label for="skill1">Skill1:</label>
+<input type="text" id="skill1" name="skill1">
+<label for="skill2">Skill2:</label>
+<input type="text" id="skill2" name="skill2">
+<label for="skill3">Skill3:</label>
+<input type="text" id="skill3" name="skill3">
+</div>
+<input type="submit" value="Generate Resume">
+</form>
+<div id="resumeOutput"></div>
+<script src="index.js" ></script>
+</div>
+</body>
+</html>

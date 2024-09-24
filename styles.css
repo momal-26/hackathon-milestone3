@@ -1,0 +1,79 @@
+body{
+
+    background-color: lightblue;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+font-size: 40px;;
+font-weight: bold;
+text-transform: capitalize;
+color: rgb(108, 62, 7);
+text-shadow: 1vmin 1vmin 1vmin;
+text-align: center;
+
+
+}
+h2{
+font-size: 35px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: coral;
+text-decoration: underline;
+text-transform: uppercase;
+
+}
+
+input[type=text], select {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: medium;
+
+}
+input[type=tel],select{
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: medium;
+
+}
+input[type=email],select{
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: medium;
+
+}
+
+input[type=submit] {
+    width: 15%;
+    background-color: #9c4c0a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #a19d1a;
+  }
+  div {
+    border-radius: 5px;
+    background-color: #3c8cc1a1;
+    padding: 20px;
+  }  
