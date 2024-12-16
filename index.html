@@ -1,60 +1,64 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> milestone3/Dynamic resume </title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div>
-<h1>Dynamic Resume Builder with Form</h1>
-<hr width="100%" size="2" color="brown" noshade>
-<form id ="resumeForm" action="/submit" method="POST">
-<div class="info">
-<h2>personal information</h2>
-<label for="name">Name:</label>
-<input type="text" id="name" name="name">
-<label for="email">Email:</label>
-<input type="email" id="email" name="email">
-<label for ="contact">Contact Me:</label>
-<input type="tel" id="phone" name="contact">
-</div>
-<hr width="100%" color="brown" noshade="brown">
- <div class ="education">
-<h2> educational experience</h2>
-<label for="graduation">Graduation from:</label>
-<input type="text" id="education" name="graduation">
-<label for="intermediate"> Intermediate from:</label>
-<input type="text" id="education" name="intermediate">
-<label for ="matriculation">Matriculation from: </label>
-<input type="text" id="education" name="matriculation">
-  </div> 
-    <hr width="100%" color="brown" noshade="brown">
- <div class="experience">
-<h2> professional experience</h2>
-<label for="experience">Experience1:</label>
-<input type="text" id="experience" name="experience1">
-<label for="experience">Experience2:</label>
-<input type="text" id="experience" name="experience2">
-<label for ="experience">Experience3:</label>
-<input type="text" id="experience" name="experience3">
-</div> 
-  <hr width="100%" color="brown" noshade="brown">
- <div class ="skills">
-<h2>skills</h2>
-<label for="skills">Skill1:</label>
-<input type="text" id="skills" name="skill1">
-<label for="skill">Skill2:</label>
-<input type="text" id="skills" name="skill2">
-<label for ="skill">Skill3:</label>
-<input type="text" id="skills" name="skill3">
-</div> 
-    <input type="submit" value="Generate Resume">
-</form>
-<div id="resumeOutput"></div>
-<script src="index.js" ></script>
-</div>
-</body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Dynamic Resume Builder</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+<div>  
+    <h1>Dynamic Resume Builder with Form</h1>  
+    <hr width="100%" size="2" color="brown" noshade>  
+    <form id="resumeForm">  
+        <div class="info">  
+            <h2>Personal Information</h2>  
+            <label for="name">Name:</label>  
+            <input type="text" id="name" name="name" required>  
+            <label for="email">Email:</label>  
+            <input type="email" id="email" name="email" required>  
+            <label for="contact">Contact Me:</label>  
+            <input type="tel" id="phone" name="contact" required>  
+        </div>  
+        <hr width="100%" color="brown" noshade="brown">  
+        <div class="education">  
+            <h2>Educational Experience</h2>  
+            <label for="graduation">Graduation from:</label>  
+            <input type="text" id="graduation" name="graduation" required>  
+            <label for="intermediate">Intermediate from:</label>  
+            <input type="text" id="intermediate" name="intermediate" required>  
+            <label for="matriculation">Matriculation from:</label>  
+            <input type="text" id="matriculation" name="matriculation" required>  
+        </div>  
+        <hr width="100%" color="brown" noshade="brown">  
+        <div class="experience">  
+            <h2>Professional Experience</h2>  
+            <label for="experience1">Experience 1:</label>  
+            <input type="text" id="experience1" name="experience1" required>  
+            <label for="experience2">Experience 2:</label>  
+            <input type="text" id="experience2" name="experience2" required>  
+            <label for="experience3">Experience 3:</label>  
+            <input type="text" id="experience3" name="experience3" required>  
+        </div>  
+        <hr width="100%" color="brown" noshade="brown">  
+        <div class="skills">  
+            <h2>Skills</h2>  
+            <label for="skill1">Skill 1:</label>  
+            <input type="text" id="skill1" name="skill1" required>  
+            <label for="skill2">Skill 2:</label>  
+            <input type="text" id="skill2" name="skill2">  
+            <label for="skill3">Skill 3:</label>  
+            <input type="text" id="skill3" name="skill3">  
+        </div>  
+        <input type="submit" value="Generate Resume">  
+    </form>  
+    <div id="resumeOutput" class="resume-output"></div>  
+    <script src="index.js"></script>  
+</div>  
+</body>  
 </html>
+
+
+
 
 
